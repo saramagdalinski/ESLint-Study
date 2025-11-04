@@ -1,0 +1,51 @@
+﻿repo_full_name,html_url,script_result_has_eslint,script_result_path,manual_check_eslint_found,manual_check_path,finding_type,notes
+Pawn-Appetit/pawn-appetit,https://github.com/Pawn-Appetit/pawn-appetit,FALSE,N/A,FALSE,N/A,TN,
+microsoft/TypeScript-TmLanguage,https://github.com/microsoft/TypeScript-TmLanguage,FALSE,N/A,FALSE,N/A,TN,
+d0whc3r/vue-auth-plugin,https://github.com/d0whc3r/vue-auth-plugin,FALSE,N/A,FALSE,N/A,TN,"Only recent activity is from renovatebot, uses deprecated tslint."
+Semro/syncwatch,https://github.com/Semro/syncwatch,FALSE,N/A,FALSE,N/A,TN,
+1Password/op-vscode,https://github.com/1Password/op-vscode,TRUE,.eslintrc.json,TRUE,.eslintrc.json,TP,Uses prettier.
+turt2live/matrix-bot-sdk,https://github.com/turt2live/matrix-bot-sdk,TRUE,.eslintrc.js,TRUE,.eslintrc.js,TP,
+typeorm/typeorm,https://github.com/typeorm/typeorm,TRUE,eslint.config.mjs,TRUE,eslint.config.mjs,TP,
+Tahul/pinceau,https://github.com/Tahul/pinceau,TRUE,eslint.config.js,TRUE,eslint.config.js,TP,
+mdx-js/eslint-mdx,https://github.com/mdx-js/eslint-mdx,TRUE,eslint.config.js,TRUE,eslint.config.js,TP,
+giselles-ai/giselle,https://github.com/giselles-ai/giselle,FALSE,N/A,FALSE,N/A,TN,Uses stylelint.
+stenciljs/eslint-plugin,https://github.com/stenciljs/eslint-plugin,FALSE,N/A,FALSE,N/A,TN,
+open-southeners/vscode-laravel-pint,https://github.com/open-southeners/vscode-laravel-pint,TRUE,.eslintrc.json,TRUE,.eslintrc.json,TP,
+kasecato/vscode-intellij-idea-keybindings,https://github.com/kasecato/vscode-intellij-idea-keybindings,TRUE,.eslintrc.cjs,TRUE,.eslintrc.cjs,TP,Uses prettier and jsbeautify.
+mathematic-inc/ts-japi,https://github.com/mathematic-inc/ts-japi,TRUE,.eslintrc,TRUE,.eslintrc,TP,Uses prettier.
+longshotlabs/simpl-schema,https://github.com/longshotlabs/simpl-schema,TRUE,.eslintrc.cjs,TRUE,.eslintrc.cjs,TP,
+solidjs/solid-playground,https://github.com/solidjs/solid-playground,FALSE,N/A,FALSE,N/A,TN,"Uses prettier. Project uses ESLint as a library for a live in-browser editor, but lacks a standard config file for its own source code."
+denoland/std,https://github.com/denoland/std,FALSE,N/A,FALSE,N/A,TN,uses custom-built scripts (like lint_plugin.ts) for its tooling.
+rianadon/timer-bar-card,https://github.com/rianadon/timer-bar-card,FALSE,N/A,FALSE,N/A,TN,
+finos/architecture-as-code,https://github.com/finos/architecture-as-code,TRUE,calm-models/eslint.config.mjs,TRUE,calm-models/eslint.config.mjs,TP,Uses prettier. Has several ESLint configs in different modules**
+farcasterxyz/hub-monorepo,https://github.com/farcasterxyz/hub-monorepo,FALSE,N/A,FALSE,N/A,TN,
+obsidianmd/obsidian-clipper,https://github.com/obsidianmd/obsidian-clipper,TRUE,.eslintrc.json,TRUE,.eslintrc.json,TP,
+twinnydotdev/twinny,https://github.com/twinnydotdev/twinny,TRUE,.eslintrc.cjs,TRUE,.eslintrc.cjs,TP,
+nextstrain/nextclade,https://github.com/nextstrain/nextclade,TRUE,packages/nextclade-web/.eslintrc.js,TRUE,packages/nextclade-web/.eslintrc.js,TP,
+pnp/sp-dev-fx-property-controls,https://github.com/pnp/sp-dev-fx-property-controls,TRUE,.eslintrc.js,TRUE,.eslintrc.js,TP,Also has hintrc
+fedify-dev/hollo,https://github.com/fedify-dev/hollo,FALSE,N/A,FALSE,N/A,TN,
+mmulet/term.everything,https://github.com/mmulet/term.everything,FALSE,N/A,FALSE,N/A,TN,
+Simon-Tesla/RaccoonyWebEx,https://github.com/Simon-Tesla/RaccoonyWebEx,FALSE,N/A,FALSE,N/A,TN,
+yzhang-gh/vscode-markdown,https://github.com/yzhang-gh/vscode-markdown,FALSE,N/A,FALSE,N/A,TN,Has some formatting files.
+eclipse-langium/langium,https://github.com/eclipse-langium/langium,TRUE,eslint.config.mjs,TRUE,eslint.config.mjs,TP,
+hust-open-atom-club/hust-mirrors,https://github.com/hust-open-atom-club/hust-mirrors,FALSE,N/A,FALSE,N/A,TN,Contains .zhlintrc (for chinese)
+react-chatbotify/react-chatbotify,https://github.com/react-chatbotify/react-chatbotify,TRUE,eslint.config.js,TRUE,eslint.config.js,TP,Ignores patterns.
+lintsinghua/XCodeReviewer,https://github.com/lintsinghua/XCodeReviewer,FALSE,N/A,FALSE,N/A,TN,
+keplergl/kepler.gl,https://github.com/keplergl/kepler.gl,TRUE,.eslintrc.js,TRUE,.eslintrc.js,TP,Also uses stylelint
+undergroundwires/privacy.sexy,https://github.com/undergroundwires/privacy.sexy,TRUE,.eslintrc.cjs,TRUE,.eslintrc.cjs,TP,
+eclipsesource/jsonforms,https://github.com/eclipsesource/jsonforms,TRUE,packages/core/.eslintrc.js,TRUE,packages/core/.eslintrc.js,TP,Also uses prettier.
+jaegertracing/documentation,https://github.com/jaegertracing/documentation,FALSE,N/A,FALSE,N/A,TN,
+dmacfarlane/angular-mentions,https://github.com/dmacfarlane/angular-mentions,FALSE,N/A,FALSE,N/A,TN,Has tslint.
+gladly-team/next-firebase-auth,https://github.com/gladly-team/next-firebase-auth,TRUE,.eslintrc.js,TRUE,.eslintrc.js,TP,Uses prettier.
+cyntler/react-doc-viewer,https://github.com/cyntler/react-doc-viewer,TRUE,.eslintrc.json,TRUE,.eslintrc.json,TP,
+melt-ui/melt-ui,https://github.com/melt-ui/melt-ui,TRUE,.eslintrc.cjs,TRUE,.eslintrc.cjs,TP,
+tscircuit/tscircuit,https://github.com/tscircuit/tscircuit,FALSE,N/A,FALSE,N/A,TN,
+liou666/polyglot,https://github.com/liou666/polyglot,FALSE,N/A,FALSE,N/A,TN,
+donmccurdy/glTF-Transform,https://github.com/donmccurdy/glTF-Transform,FALSE,N/A,FALSE,N/A,TN,
+awslabs/aws-mobile-appsync-sdk-js,https://github.com/awslabs/aws-mobile-appsync-sdk-js,FALSE,N/A,FALSE,N/A,TN,
+0010aor/FlashNotes,https://github.com/0010aor/FlashNotes,FALSE,N/A,FALSE,N/A,TN,
+zmxv/react-native-sound,https://github.com/zmxv/react-native-sound,TRUE,example/.eslintrc.js,FALSE,N/A,FP,"Not used for the main library, only for an example directory."
+Open-Trader/opentrader,https://github.com/Open-Trader/opentrader,FALSE,N/A,FALSE,N/A,TN,Uses Oxlint.
+ealush/emoji-picker-react,https://github.com/ealush/emoji-picker-react,TRUE,.eslintrc.js,TRUE,.eslintrc.js,TP,
+devsecblueprint/devsecblueprint,https://github.com/devsecblueprint/devsecblueprint,FALSE,N/A,FALSE,N/A,TN,
+flanker/bilibili-dark-mode,https://github.com/flanker/bilibili-dark-mode,TRUE,.eslintrc.json,TRUE,.eslintrc.json,TP,Uses prettier.
