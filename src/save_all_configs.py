@@ -18,7 +18,7 @@ INPUT_CSV = 'typescript_repos_metadata_filtered.csv'
 TEMP_REPO_PATH = os.path.abspath('temp_repo_for_saving_configs')
 
 # 4. Directory to save the final config files
-CONFIG_SAVE_DIR = 'eslint_configs'
+CONFIG_SAVE_DIR = '../eslint_configs'
 
 
 # --- Helper Functions ---
