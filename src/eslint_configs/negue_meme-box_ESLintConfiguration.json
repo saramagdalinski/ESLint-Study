@@ -1,0 +1,251 @@
+{
+  "@typescript-eslint/no-empty-function": [
+    0
+  ],
+  "@typescript-eslint/no-var-requires": [
+    0
+  ],
+  "@typescript-eslint/no-explicit-any": [
+    0
+  ],
+  "@typescript-eslint/no-unsafe-call": [
+    0
+  ],
+  "@typescript-eslint/no-unsafe-member-access": [
+    0
+  ],
+  "@typescript-eslint/no-unsafe-assignment": [
+    0
+  ],
+  "@typescript-eslint/no-unsafe-return": [
+    0
+  ],
+  "@typescript-eslint/no-floating-promises": [
+    0
+  ],
+  "@typescript-eslint/no-empty-interface": [
+    0
+  ],
+  "@typescript-eslint/no-unsafe-argument": [
+    "warn"
+  ],
+  "@typescript-eslint/restrict-plus-operands": [
+    "warn"
+  ],
+  "@typescript-eslint/restrict-template-expressions": [
+    "warn"
+  ],
+  "@typescript-eslint/no-misused-promises": [
+    "warn"
+  ],
+  "no-async-promise-executor": [
+    "warn"
+  ],
+  "@typescript-eslint/unbound-method": [
+    "error",
+    {
+      "ignoreStatic": true
+    }
+  ],
+  "no-restricted-syntax": [
+    "warn"
+  ],
+  "@typescript-eslint/member-ordering": [
+    "off"
+  ],
+  "@angular-eslint/no-output-on-prefix": [
+    "warn"
+  ],
+  "@angular-eslint/no-empty-lifecycle-method": [
+    "warn"
+  ],
+  "@typescript-eslint/await-thenable": [
+    "error"
+  ],
+  "@typescript-eslint/no-for-in-array": [
+    "error"
+  ],
+  "no-implied-eval": [
+    "off"
+  ],
+  "@typescript-eslint/no-implied-eval": [
+    "error"
+  ],
+  "@typescript-eslint/no-unnecessary-type-assertion": [
+    "error"
+  ],
+  "require-await": [
+    "off"
+  ],
+  "@typescript-eslint/require-await": [
+    "error"
+  ],
+  "constructor-super": [
+    "off"
+  ],
+  "getter-return": [
+    "off"
+  ],
+  "no-const-assign": [
+    "off"
+  ],
+  "no-dupe-args": [
+    "off"
+  ],
+  "no-dupe-class-members": [
+    "off"
+  ],
+  "no-dupe-keys": [
+    "off"
+  ],
+  "no-func-assign": [
+    "off"
+  ],
+  "no-import-assign": [
+    "off"
+  ],
+  "no-new-symbol": [
+    "off"
+  ],
+  "no-obj-calls": [
+    "off"
+  ],
+  "no-redeclare": [
+    "off"
+  ],
+  "no-setter-return": [
+    "off"
+  ],
+  "no-this-before-super": [
+    "off"
+  ],
+  "no-undef": [
+    "off"
+  ],
+  "no-unreachable": [
+    "off"
+  ],
+  "no-unsafe-negation": [
+    "off"
+  ],
+  "no-var": [
+    "error"
+  ],
+  "prefer-const": [
+    "error"
+  ],
+  "prefer-rest-params": [
+    "error"
+  ],
+  "prefer-spread": [
+    "error"
+  ],
+  "valid-typeof": [
+    "off"
+  ],
+  "@typescript-eslint/adjacent-overload-signatures": [
+    "error"
+  ],
+  "@typescript-eslint/ban-ts-comment": [
+    "error"
+  ],
+  "@typescript-eslint/ban-types": [
+    "error"
+  ],
+  "no-array-constructor": [
+    "off"
+  ],
+  "@typescript-eslint/no-array-constructor": [
+    "error"
+  ],
+  "no-empty-function": [
+    "off"
+  ],
+  "@typescript-eslint/no-extra-non-null-assertion": [
+    "error"
+  ],
+  "no-extra-semi": [
+    "off"
+  ],
+  "@typescript-eslint/no-extra-semi": [
+    "error"
+  ],
+  "@typescript-eslint/no-inferrable-types": [
+    "error"
+  ],
+  "no-loss-of-precision": [
+    "off"
+  ],
+  "@typescript-eslint/no-loss-of-precision": [
+    "error"
+  ],
+  "@typescript-eslint/no-misused-new": [
+    "error"
+  ],
+  "@typescript-eslint/no-namespace": [
+    "error"
+  ],
+  "@typescript-eslint/no-non-null-asserted-optional-chain": [
+    "error"
+  ],
+  "@typescript-eslint/no-non-null-assertion": [
+    "warn"
+  ],
+  "@typescript-eslint/no-this-alias": [
+    "error"
+  ],
+  "@typescript-eslint/no-unnecessary-type-constraint": [
+    "error"
+  ],
+  "no-unused-vars": [
+    "off"
+  ],
+  "@typescript-eslint/no-unused-vars": [
+    "warn"
+  ],
+  "@typescript-eslint/prefer-as-const": [
+    "error"
+  ],
+  "@typescript-eslint/prefer-namespace-keyword": [
+    "error"
+  ],
+  "@typescript-eslint/triple-slash-reference": [
+    "error"
+  ],
+  "@angular-eslint/component-class-suffix": [
+    "error"
+  ],
+  "@angular-eslint/contextual-lifecycle": [
+    "error"
+  ],
+  "@angular-eslint/directive-class-suffix": [
+    "error"
+  ],
+  "@angular-eslint/no-conflicting-lifecycle": [
+    "error"
+  ],
+  "@angular-eslint/no-host-metadata-property": [
+    "error"
+  ],
+  "@angular-eslint/no-input-rename": [
+    "error"
+  ],
+  "@angular-eslint/no-inputs-metadata-property": [
+    "error"
+  ],
+  "@angular-eslint/no-output-native": [
+    "error"
+  ],
+  "@angular-eslint/no-output-rename": [
+    "error"
+  ],
+  "@angular-eslint/no-outputs-metadata-property": [
+    "error"
+  ],
+  "@angular-eslint/use-lifecycle-interface": [
+    "warn"
+  ],
+  "@angular-eslint/use-pipe-transform-interface": [
+    "error"
+  ]
+}

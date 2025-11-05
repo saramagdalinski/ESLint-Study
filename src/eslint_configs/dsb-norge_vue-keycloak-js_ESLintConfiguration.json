@@ -1,0 +1,265 @@
+{
+  "constructor-super": [
+    0
+  ],
+  "getter-return": [
+    0,
+    {
+      "allowImplicit": false
+    }
+  ],
+  "no-class-assign": [
+    0
+  ],
+  "no-const-assign": [
+    0
+  ],
+  "no-dupe-args": [
+    0
+  ],
+  "no-dupe-class-members": [
+    0
+  ],
+  "no-dupe-keys": [
+    0
+  ],
+  "no-func-assign": [
+    0
+  ],
+  "no-import-assign": [
+    0
+  ],
+  "no-new-native-nonconstructor": [
+    0
+  ],
+  "no-new-symbol": [
+    0
+  ],
+  "no-obj-calls": [
+    0
+  ],
+  "no-redeclare": [
+    0,
+    {
+      "builtinGlobals": true
+    }
+  ],
+  "no-setter-return": [
+    0
+  ],
+  "no-this-before-super": [
+    0
+  ],
+  "no-undef": [
+    0,
+    {
+      "typeof": false
+    }
+  ],
+  "no-unreachable": [
+    0
+  ],
+  "no-unsafe-negation": [
+    0,
+    {
+      "enforceForOrderingRelations": false
+    }
+  ],
+  "no-var": [
+    2
+  ],
+  "no-with": [
+    0
+  ],
+  "prefer-const": [
+    2,
+    {
+      "destructuring": "any",
+      "ignoreReadBeforeAssign": false
+    }
+  ],
+  "prefer-rest-params": [
+    2
+  ],
+  "prefer-spread": [
+    2
+  ],
+  "@typescript-eslint/ban-ts-comment": [
+    2,
+    {
+      "minimumDescriptionLength": 10
+    }
+  ],
+  "no-array-constructor": [
+    0
+  ],
+  "@typescript-eslint/no-array-constructor": [
+    2
+  ],
+  "@typescript-eslint/no-duplicate-enum-values": [
+    2
+  ],
+  "@typescript-eslint/no-dynamic-delete": [
+    2
+  ],
+  "@typescript-eslint/no-empty-object-type": [
+    2
+  ],
+  "@typescript-eslint/no-explicit-any": [
+    2
+  ],
+  "@typescript-eslint/no-extra-non-null-assertion": [
+    2
+  ],
+  "@typescript-eslint/no-extraneous-class": [
+    2
+  ],
+  "@typescript-eslint/no-invalid-void-type": [
+    2
+  ],
+  "@typescript-eslint/no-misused-new": [
+    2
+  ],
+  "@typescript-eslint/no-namespace": [
+    2
+  ],
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing": [
+    2
+  ],
+  "@typescript-eslint/no-non-null-asserted-optional-chain": [
+    2
+  ],
+  "@typescript-eslint/no-non-null-assertion": [
+    2
+  ],
+  "@typescript-eslint/no-require-imports": [
+    2
+  ],
+  "@typescript-eslint/no-this-alias": [
+    2
+  ],
+  "@typescript-eslint/no-unnecessary-type-constraint": [
+    2
+  ],
+  "@typescript-eslint/no-unsafe-declaration-merging": [
+    2
+  ],
+  "@typescript-eslint/no-unsafe-function-type": [
+    2
+  ],
+  "no-unused-expressions": [
+    0,
+    {
+      "allowShortCircuit": false,
+      "allowTernary": false,
+      "allowTaggedTemplates": false,
+      "enforceForJSX": false,
+      "ignoreDirectives": false
+    }
+  ],
+  "@typescript-eslint/no-unused-expressions": [
+    2,
+    {
+      "allowShortCircuit": false,
+      "allowTaggedTemplates": false,
+      "allowTernary": false
+    }
+  ],
+  "no-unused-vars": [
+    0
+  ],
+  "@typescript-eslint/no-unused-vars": [
+    2
+  ],
+  "no-useless-constructor": [
+    0
+  ],
+  "@typescript-eslint/no-useless-constructor": [
+    2
+  ],
+  "@typescript-eslint/no-wrapper-object-types": [
+    2
+  ],
+  "@typescript-eslint/prefer-as-const": [
+    2
+  ],
+  "@typescript-eslint/prefer-literal-enum-member": [
+    2
+  ],
+  "@typescript-eslint/prefer-namespace-keyword": [
+    2
+  ],
+  "@typescript-eslint/triple-slash-reference": [
+    2
+  ],
+  "@typescript-eslint/unified-signatures": [
+    2
+  ],
+  "@typescript-eslint/adjacent-overload-signatures": [
+    2
+  ],
+  "@typescript-eslint/array-type": [
+    2
+  ],
+  "@typescript-eslint/ban-tslint-comment": [
+    2
+  ],
+  "@typescript-eslint/class-literal-property-style": [
+    2
+  ],
+  "@typescript-eslint/consistent-generic-constructors": [
+    2
+  ],
+  "@typescript-eslint/consistent-indexed-object-style": [
+    2
+  ],
+  "@typescript-eslint/consistent-type-assertions": [
+    2
+  ],
+  "@typescript-eslint/consistent-type-definitions": [
+    2
+  ],
+  "@typescript-eslint/no-confusing-non-null-assertion": [
+    2
+  ],
+  "no-empty-function": [
+    0,
+    {
+      "allow": []
+    }
+  ],
+  "@typescript-eslint/no-empty-function": [
+    2,
+    {
+      "allow": []
+    }
+  ],
+  "@typescript-eslint/no-inferrable-types": [
+    2
+  ],
+  "@typescript-eslint/prefer-for-of": [
+    2
+  ],
+  "@typescript-eslint/prefer-function-type": [
+    2
+  ],
+  "no-debugger": [
+    1
+  ],
+  "quotes": [
+    2,
+    "single"
+  ],
+  "semi": [
+    2,
+    "never"
+  ],
+  "indent": [
+    2,
+    2
+  ],
+  "object-curly-spacing": [
+    2,
+    "always"
+  ]
+}

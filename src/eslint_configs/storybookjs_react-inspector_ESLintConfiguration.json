@@ -1,0 +1,97 @@
+{
+  "@typescript-eslint/ban-ts-comment": [
+    1
+  ],
+  "no-array-constructor": [
+    0
+  ],
+  "@typescript-eslint/no-array-constructor": [
+    2
+  ],
+  "@typescript-eslint/no-duplicate-enum-values": [
+    2
+  ],
+  "@typescript-eslint/no-empty-object-type": [
+    2
+  ],
+  "@typescript-eslint/no-explicit-any": [
+    0
+  ],
+  "@typescript-eslint/no-extra-non-null-assertion": [
+    2
+  ],
+  "@typescript-eslint/no-misused-new": [
+    2
+  ],
+  "@typescript-eslint/no-namespace": [
+    2
+  ],
+  "@typescript-eslint/no-non-null-asserted-optional-chain": [
+    2
+  ],
+  "@typescript-eslint/no-require-imports": [
+    2
+  ],
+  "@typescript-eslint/no-this-alias": [
+    2
+  ],
+  "@typescript-eslint/no-unnecessary-type-constraint": [
+    2
+  ],
+  "@typescript-eslint/no-unsafe-declaration-merging": [
+    2
+  ],
+  "@typescript-eslint/no-unsafe-function-type": [
+    2
+  ],
+  "no-unused-expressions": [
+    0,
+    {
+      "allowShortCircuit": false,
+      "allowTernary": false,
+      "allowTaggedTemplates": false,
+      "enforceForJSX": false,
+      "ignoreDirectives": false
+    }
+  ],
+  "@typescript-eslint/no-unused-expressions": [
+    2,
+    {
+      "allowShortCircuit": false,
+      "allowTaggedTemplates": false,
+      "allowTernary": false
+    }
+  ],
+  "no-unused-vars": [
+    0
+  ],
+  "@typescript-eslint/no-unused-vars": [
+    2
+  ],
+  "@typescript-eslint/no-wrapper-object-types": [
+    2
+  ],
+  "@typescript-eslint/prefer-as-const": [
+    2
+  ],
+  "@typescript-eslint/prefer-namespace-keyword": [
+    2
+  ],
+  "@typescript-eslint/triple-slash-reference": [
+    2
+  ],
+  "prettier/prettier": [
+    2
+  ],
+  "arrow-body-style": [
+    0,
+    "as-needed"
+  ],
+  "prefer-arrow-callback": [
+    0,
+    {
+      "allowNamedFunctions": false,
+      "allowUnboundThis": true
+    }
+  ]
+}

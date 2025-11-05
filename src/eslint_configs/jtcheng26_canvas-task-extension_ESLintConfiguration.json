@@ -1,0 +1,814 @@
+{
+  "react/jsx-filename-extension": [
+    2,
+    {
+      "extensions": [
+        ".js",
+        ".jsx",
+        ".ts",
+        ".tsx"
+      ]
+    }
+  ],
+  "react/require-default-props": [
+    0
+  ],
+  "react/prop-types": [
+    0
+  ],
+  "react/jsx-max-depth": [
+    0
+  ],
+  "jest/expect-expect": [
+    "warn"
+  ],
+  "jest/no-commented-out-tests": [
+    "warn"
+  ],
+  "jest/no-conditional-expect": [
+    "error"
+  ],
+  "jest/no-deprecated-functions": [
+    "error"
+  ],
+  "jest/no-disabled-tests": [
+    "warn"
+  ],
+  "jest/no-done-callback": [
+    "error"
+  ],
+  "jest/no-export": [
+    "error"
+  ],
+  "jest/no-focused-tests": [
+    "error"
+  ],
+  "jest/no-identical-title": [
+    "error"
+  ],
+  "jest/no-interpolation-in-snapshots": [
+    "error"
+  ],
+  "jest/no-jasmine-globals": [
+    "error"
+  ],
+  "jest/no-jest-import": [
+    "error"
+  ],
+  "jest/no-mocks-import": [
+    "error"
+  ],
+  "jest/no-standalone-expect": [
+    "error"
+  ],
+  "jest/no-test-prefixes": [
+    "error"
+  ],
+  "jest/no-try-expect": [
+    "error"
+  ],
+  "jest/valid-describe": [
+    "error"
+  ],
+  "jest/valid-expect-in-promise": [
+    "error"
+  ],
+  "jest/valid-expect": [
+    "error"
+  ],
+  "jest/valid-title": [
+    "error"
+  ],
+  "react/jsx-child-element-spacing": [
+    "off"
+  ],
+  "react/jsx-closing-bracket-location": [
+    "off"
+  ],
+  "react/jsx-closing-tag-location": [
+    "off"
+  ],
+  "react/jsx-curly-newline": [
+    "off"
+  ],
+  "react/jsx-curly-spacing": [
+    "off"
+  ],
+  "react/jsx-equals-spacing": [
+    "off"
+  ],
+  "react/jsx-first-prop-new-line": [
+    "off"
+  ],
+  "react/jsx-indent": [
+    "off"
+  ],
+  "react/jsx-indent-props": [
+    "off"
+  ],
+  "react/jsx-max-props-per-line": [
+    "off"
+  ],
+  "react/jsx-one-expression-per-line": [
+    "off"
+  ],
+  "react/jsx-props-no-multi-spaces": [
+    "off"
+  ],
+  "react/jsx-tag-spacing": [
+    "off"
+  ],
+  "react/jsx-wrap-multilines": [
+    "off"
+  ],
+  "react/jsx-space-before-closing": [
+    "off"
+  ],
+  "@typescript-eslint/ban-ts-comment": [
+    "error"
+  ],
+  "@typescript-eslint/ban-types": [
+    "error"
+  ],
+  "no-array-constructor": [
+    "off"
+  ],
+  "@typescript-eslint/no-array-constructor": [
+    "error"
+  ],
+  "@typescript-eslint/no-duplicate-enum-values": [
+    "error"
+  ],
+  "@typescript-eslint/no-explicit-any": [
+    "error"
+  ],
+  "@typescript-eslint/no-extra-non-null-assertion": [
+    "error"
+  ],
+  "no-loss-of-precision": [
+    "off"
+  ],
+  "@typescript-eslint/no-loss-of-precision": [
+    "error"
+  ],
+  "@typescript-eslint/no-misused-new": [
+    "error"
+  ],
+  "@typescript-eslint/no-namespace": [
+    "error"
+  ],
+  "@typescript-eslint/no-non-null-asserted-optional-chain": [
+    "error"
+  ],
+  "@typescript-eslint/no-this-alias": [
+    "error"
+  ],
+  "@typescript-eslint/no-unnecessary-type-constraint": [
+    "error"
+  ],
+  "@typescript-eslint/no-unsafe-declaration-merging": [
+    "error"
+  ],
+  "no-unused-vars": [
+    "off"
+  ],
+  "@typescript-eslint/no-unused-vars": [
+    "error"
+  ],
+  "@typescript-eslint/no-var-requires": [
+    "error"
+  ],
+  "@typescript-eslint/prefer-as-const": [
+    "error"
+  ],
+  "@typescript-eslint/triple-slash-reference": [
+    "error"
+  ],
+  "constructor-super": [
+    "off"
+  ],
+  "getter-return": [
+    "off"
+  ],
+  "no-const-assign": [
+    "off"
+  ],
+  "no-dupe-args": [
+    "off"
+  ],
+  "no-dupe-class-members": [
+    "off"
+  ],
+  "no-dupe-keys": [
+    "off"
+  ],
+  "no-func-assign": [
+    "off"
+  ],
+  "no-import-assign": [
+    "off"
+  ],
+  "no-new-symbol": [
+    "off"
+  ],
+  "no-obj-calls": [
+    "off"
+  ],
+  "no-redeclare": [
+    "off"
+  ],
+  "no-setter-return": [
+    "off"
+  ],
+  "no-this-before-super": [
+    "off"
+  ],
+  "no-undef": [
+    "off"
+  ],
+  "no-unreachable": [
+    "off"
+  ],
+  "no-unsafe-negation": [
+    "off"
+  ],
+  "no-var": [
+    "error"
+  ],
+  "prefer-const": [
+    "error"
+  ],
+  "prefer-rest-params": [
+    "error"
+  ],
+  "prefer-spread": [
+    "error"
+  ],
+  "prettier/prettier": [
+    "error"
+  ],
+  "arrow-body-style": [
+    0
+  ],
+  "curly": [
+    0
+  ],
+  "lines-around-comment": [
+    0
+  ],
+  "max-len": [
+    0
+  ],
+  "no-confusing-arrow": [
+    0
+  ],
+  "no-mixed-operators": [
+    0
+  ],
+  "no-tabs": [
+    0
+  ],
+  "no-unexpected-multiline": [
+    0
+  ],
+  "prefer-arrow-callback": [
+    0
+  ],
+  "quotes": [
+    0
+  ],
+  "array-bracket-newline": [
+    "off"
+  ],
+  "array-bracket-spacing": [
+    "off"
+  ],
+  "array-element-newline": [
+    "off"
+  ],
+  "arrow-parens": [
+    "off"
+  ],
+  "arrow-spacing": [
+    "off"
+  ],
+  "block-spacing": [
+    "off"
+  ],
+  "brace-style": [
+    "off"
+  ],
+  "comma-dangle": [
+    "off"
+  ],
+  "comma-spacing": [
+    "off"
+  ],
+  "comma-style": [
+    "off"
+  ],
+  "computed-property-spacing": [
+    "off"
+  ],
+  "dot-location": [
+    "off"
+  ],
+  "eol-last": [
+    "off"
+  ],
+  "func-call-spacing": [
+    "off"
+  ],
+  "function-call-argument-newline": [
+    "off"
+  ],
+  "function-paren-newline": [
+    "off"
+  ],
+  "generator-star": [
+    "off"
+  ],
+  "generator-star-spacing": [
+    "off"
+  ],
+  "implicit-arrow-linebreak": [
+    "off"
+  ],
+  "indent": [
+    "off"
+  ],
+  "jsx-quotes": [
+    "off"
+  ],
+  "key-spacing": [
+    "off"
+  ],
+  "keyword-spacing": [
+    "off"
+  ],
+  "linebreak-style": [
+    "off"
+  ],
+  "multiline-ternary": [
+    "off"
+  ],
+  "newline-per-chained-call": [
+    "off"
+  ],
+  "new-parens": [
+    "off"
+  ],
+  "no-arrow-condition": [
+    "off"
+  ],
+  "no-comma-dangle": [
+    "off"
+  ],
+  "no-extra-parens": [
+    "off"
+  ],
+  "no-extra-semi": [
+    "off"
+  ],
+  "no-floating-decimal": [
+    "off"
+  ],
+  "no-mixed-spaces-and-tabs": [
+    "off"
+  ],
+  "no-multi-spaces": [
+    "off"
+  ],
+  "no-multiple-empty-lines": [
+    "off"
+  ],
+  "no-reserved-keys": [
+    "off"
+  ],
+  "no-space-before-semi": [
+    "off"
+  ],
+  "no-trailing-spaces": [
+    "off"
+  ],
+  "no-whitespace-before-property": [
+    "off"
+  ],
+  "no-wrap-func": [
+    "off"
+  ],
+  "nonblock-statement-body-position": [
+    "off"
+  ],
+  "object-curly-newline": [
+    "off"
+  ],
+  "object-curly-spacing": [
+    "off"
+  ],
+  "object-property-newline": [
+    "off"
+  ],
+  "one-var-declaration-per-line": [
+    "off"
+  ],
+  "operator-linebreak": [
+    "off"
+  ],
+  "padded-blocks": [
+    "off"
+  ],
+  "quote-props": [
+    "off"
+  ],
+  "rest-spread-spacing": [
+    "off"
+  ],
+  "semi": [
+    "off"
+  ],
+  "semi-spacing": [
+    "off"
+  ],
+  "semi-style": [
+    "off"
+  ],
+  "space-after-function-name": [
+    "off"
+  ],
+  "space-after-keywords": [
+    "off"
+  ],
+  "space-before-blocks": [
+    "off"
+  ],
+  "space-before-function-paren": [
+    "off"
+  ],
+  "space-before-function-parentheses": [
+    "off"
+  ],
+  "space-before-keywords": [
+    "off"
+  ],
+  "space-in-brackets": [
+    "off"
+  ],
+  "space-in-parens": [
+    "off"
+  ],
+  "space-infix-ops": [
+    "off"
+  ],
+  "space-return-throw-case": [
+    "off"
+  ],
+  "space-unary-ops": [
+    "off"
+  ],
+  "space-unary-word-ops": [
+    "off"
+  ],
+  "switch-colon-spacing": [
+    "off"
+  ],
+  "template-curly-spacing": [
+    "off"
+  ],
+  "template-tag-spacing": [
+    "off"
+  ],
+  "unicode-bom": [
+    "off"
+  ],
+  "wrap-iife": [
+    "off"
+  ],
+  "wrap-regex": [
+    "off"
+  ],
+  "yield-star-spacing": [
+    "off"
+  ],
+  "indent-legacy": [
+    "off"
+  ],
+  "no-spaced-func": [
+    "off"
+  ],
+  "react/boolean-prop-naming": [
+    2
+  ],
+  "react/button-has-type": [
+    2
+  ],
+  "react/default-props-match-prop-types": [
+    2
+  ],
+  "react/destructuring-assignment": [
+    2
+  ],
+  "react/display-name": [
+    2
+  ],
+  "react/forbid-component-props": [
+    2
+  ],
+  "react/forbid-dom-props": [
+    2
+  ],
+  "react/forbid-elements": [
+    2
+  ],
+  "react/forbid-foreign-prop-types": [
+    2
+  ],
+  "react/forbid-prop-types": [
+    2
+  ],
+  "react/function-component-definition": [
+    2
+  ],
+  "react/jsx-boolean-value": [
+    2
+  ],
+  "react/jsx-handler-names": [
+    2
+  ],
+  "react/jsx-key": [
+    2
+  ],
+  "react/jsx-no-bind": [
+    2
+  ],
+  "react/jsx-no-comment-textnodes": [
+    2
+  ],
+  "react/jsx-no-duplicate-props": [
+    2
+  ],
+  "react/jsx-no-literals": [
+    2
+  ],
+  "react/jsx-no-script-url": [
+    2
+  ],
+  "react/jsx-no-target-blank": [
+    2
+  ],
+  "react/jsx-no-useless-fragment": [
+    2
+  ],
+  "react/jsx-no-undef": [
+    2
+  ],
+  "react/jsx-curly-brace-presence": [
+    2
+  ],
+  "react/jsx-pascal-case": [
+    2
+  ],
+  "react/jsx-fragments": [
+    2
+  ],
+  "react/jsx-props-no-spreading": [
+    2
+  ],
+  "react/jsx-sort-default-props": [
+    2
+  ],
+  "react/jsx-sort-props": [
+    2
+  ],
+  "react/jsx-uses-react": [
+    2
+  ],
+  "react/jsx-uses-vars": [
+    2
+  ],
+  "react/no-access-state-in-setstate": [
+    2
+  ],
+  "react/no-adjacent-inline-elements": [
+    2
+  ],
+  "react/no-array-index-key": [
+    2
+  ],
+  "react/no-children-prop": [
+    2
+  ],
+  "react/no-danger": [
+    2
+  ],
+  "react/no-danger-with-children": [
+    2
+  ],
+  "react/no-deprecated": [
+    2
+  ],
+  "react/no-did-mount-set-state": [
+    2
+  ],
+  "react/no-did-update-set-state": [
+    2
+  ],
+  "react/no-direct-mutation-state": [
+    2
+  ],
+  "react/no-find-dom-node": [
+    2
+  ],
+  "react/no-is-mounted": [
+    2
+  ],
+  "react/no-multi-comp": [
+    2
+  ],
+  "react/no-set-state": [
+    2
+  ],
+  "react/no-string-refs": [
+    2
+  ],
+  "react/no-redundant-should-component-update": [
+    2
+  ],
+  "react/no-render-return-value": [
+    2
+  ],
+  "react/no-this-in-sfc": [
+    2
+  ],
+  "react/no-typos": [
+    2
+  ],
+  "react/no-unescaped-entities": [
+    2
+  ],
+  "react/no-unknown-property": [
+    2
+  ],
+  "react/no-unsafe": [
+    2
+  ],
+  "react/no-unused-prop-types": [
+    2
+  ],
+  "react/no-unused-state": [
+    2
+  ],
+  "react/no-will-update-set-state": [
+    2
+  ],
+  "react/prefer-es6-class": [
+    2
+  ],
+  "react/prefer-read-only-props": [
+    2
+  ],
+  "react/prefer-stateless-function": [
+    2
+  ],
+  "react/react-in-jsx-scope": [
+    2
+  ],
+  "react/require-optimization": [
+    2
+  ],
+  "react/require-render-return": [
+    2
+  ],
+  "react/self-closing-comp": [
+    2
+  ],
+  "react/sort-comp": [
+    2
+  ],
+  "react/sort-prop-types": [
+    2
+  ],
+  "react/state-in-constructor": [
+    2
+  ],
+  "react/static-property-placement": [
+    2
+  ],
+  "react/style-prop-object": [
+    2
+  ],
+  "react/void-dom-elements-no-children": [
+    2
+  ],
+  "for-direction": [
+    "error"
+  ],
+  "no-async-promise-executor": [
+    "error"
+  ],
+  "no-case-declarations": [
+    "error"
+  ],
+  "no-class-assign": [
+    "error"
+  ],
+  "no-compare-neg-zero": [
+    "error"
+  ],
+  "no-cond-assign": [
+    "error"
+  ],
+  "no-constant-condition": [
+    "error"
+  ],
+  "no-control-regex": [
+    "error"
+  ],
+  "no-debugger": [
+    "error"
+  ],
+  "no-delete-var": [
+    "error"
+  ],
+  "no-dupe-else-if": [
+    "error"
+  ],
+  "no-duplicate-case": [
+    "error"
+  ],
+  "no-empty": [
+    "error"
+  ],
+  "no-empty-character-class": [
+    "error"
+  ],
+  "no-empty-pattern": [
+    "error"
+  ],
+  "no-ex-assign": [
+    "error"
+  ],
+  "no-extra-boolean-cast": [
+    "error"
+  ],
+  "no-fallthrough": [
+    "error"
+  ],
+  "no-global-assign": [
+    "error"
+  ],
+  "no-inner-declarations": [
+    "error"
+  ],
+  "no-invalid-regexp": [
+    "error"
+  ],
+  "no-irregular-whitespace": [
+    "error"
+  ],
+  "no-misleading-character-class": [
+    "error"
+  ],
+  "no-octal": [
+    "error"
+  ],
+  "no-prototype-builtins": [
+    "error"
+  ],
+  "no-regex-spaces": [
+    "error"
+  ],
+  "no-self-assign": [
+    "error"
+  ],
+  "no-shadow-restricted-names": [
+    "error"
+  ],
+  "no-sparse-arrays": [
+    "error"
+  ],
+  "no-unsafe-finally": [
+    "error"
+  ],
+  "no-unused-labels": [
+    "error"
+  ],
+  "no-useless-catch": [
+    "error"
+  ],
+  "no-useless-escape": [
+    "error"
+  ],
+  "no-with": [
+    "error"
+  ],
+  "require-yield": [
+    "error"
+  ],
+  "use-isnan": [
+    "error"
+  ],
+  "valid-typeof": [
+    "error"
+  ]
+}

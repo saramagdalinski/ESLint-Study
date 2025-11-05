@@ -1,0 +1,211 @@
+{
+  "expo/no-env-var-destructuring": [
+    "error"
+  ],
+  "expo/no-dynamic-env-var": [
+    "error"
+  ],
+  "react/display-name": [
+    "warn"
+  ],
+  "react/jsx-no-duplicate-props": [
+    "error"
+  ],
+  "react/jsx-no-undef": [
+    "error"
+  ],
+  "react/jsx-uses-react": [
+    "warn"
+  ],
+  "react/jsx-uses-vars": [
+    "warn"
+  ],
+  "react/no-danger-with-children": [
+    "warn"
+  ],
+  "react/no-deprecated": [
+    "warn"
+  ],
+  "react/no-direct-mutation-state": [
+    "warn"
+  ],
+  "react/no-string-refs": [
+    "warn",
+    {
+      "noTemplateLiterals": true
+    }
+  ],
+  "react/no-this-in-sfc": [
+    "warn"
+  ],
+  "react/no-unknown-property": [
+    "warn"
+  ],
+  "react/require-render-return": [
+    "warn"
+  ],
+  "react-hooks/rules-of-hooks": [
+    "error"
+  ],
+  "react-hooks/exhaustive-deps": [
+    "warn"
+  ],
+  "@typescript-eslint/array-type": [
+    "warn",
+    {
+      "default": "array"
+    }
+  ],
+  "@typescript-eslint/ban-types": [
+    "error",
+    {
+      "types": {
+        "Number": {
+          "message": "Use `number` instead.",
+          "fixWith": "number"
+        },
+        "Boolean": {
+          "message": "Use `boolean` instead.",
+          "fixWith": "boolean"
+        },
+        "Symbol": {
+          "message": "Use `symbol` instead.",
+          "fixWith": "symbol"
+        },
+        "Object": {
+          "message": "Use `object` instead.",
+          "fixWith": "object"
+        },
+        "String": {
+          "message": "Use `string` instead.",
+          "fixWith": "string"
+        }
+      },
+      "extendDefaults": false
+    }
+  ],
+  "@typescript-eslint/consistent-type-assertions": [
+    "warn",
+    {
+      "assertionStyle": "as",
+      "objectLiteralTypeAssertions": "allow"
+    }
+  ],
+  "@typescript-eslint/no-extra-non-null-assertion": [
+    "warn"
+  ],
+  "no-dupe-class-members": [
+    "off"
+  ],
+  "@typescript-eslint/no-dupe-class-members": [
+    "error"
+  ],
+  "no-redeclare": [
+    "off"
+  ],
+  "@typescript-eslint/no-redeclare": [
+    "warn"
+  ],
+  "no-unused-vars": [
+    "off",
+    {
+      "vars": "all",
+      "args": "none",
+      "ignoreRestSiblings": true,
+      "caughtErrors": "all",
+      "caughtErrorsIgnorePattern": "^_"
+    }
+  ],
+  "@typescript-eslint/no-unused-vars": [
+    "warn",
+    {
+      "vars": "all",
+      "args": "none",
+      "ignoreRestSiblings": true,
+      "caughtErrors": "all"
+    }
+  ],
+  "no-useless-constructor": [
+    "off"
+  ],
+  "@typescript-eslint/no-useless-constructor": [
+    "warn"
+  ],
+  "no-undef": [
+    "off"
+  ],
+  "import/named": [
+    "off"
+  ],
+  "eqeqeq": [
+    "warn",
+    "smart"
+  ],
+  "no-dupe-args": [
+    "error"
+  ],
+  "no-dupe-keys": [
+    "error"
+  ],
+  "no-duplicate-case": [
+    "error"
+  ],
+  "no-empty-character-class": [
+    "warn"
+  ],
+  "no-empty-pattern": [
+    "warn"
+  ],
+  "no-extend-native": [
+    "warn"
+  ],
+  "no-extra-bind": [
+    "warn"
+  ],
+  "no-unreachable": [
+    "warn"
+  ],
+  "no-unsafe-negation": [
+    "warn"
+  ],
+  "no-unused-expressions": [
+    "warn",
+    {
+      "allowShortCircuit": true,
+      "enforceForJSX": true,
+      "allowTernary": false,
+      "allowTaggedTemplates": false
+    }
+  ],
+  "no-unused-labels": [
+    "warn"
+  ],
+  "no-with": [
+    "warn"
+  ],
+  "unicode-bom": [
+    "warn",
+    "never"
+  ],
+  "use-isnan": [
+    "error"
+  ],
+  "valid-typeof": [
+    "error"
+  ],
+  "import/first": [
+    "warn"
+  ],
+  "import/default": [
+    "off"
+  ],
+  "import/no-unresolved": [
+    2
+  ],
+  "import/namespace": [
+    2
+  ],
+  "import/export": [
+    2
+  ]
+}

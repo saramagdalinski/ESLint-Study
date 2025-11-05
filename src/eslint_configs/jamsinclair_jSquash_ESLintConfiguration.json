@@ -1,0 +1,6 @@
+{
+  "import/extensions": [
+    "error",
+    "always"
+  ]
+}

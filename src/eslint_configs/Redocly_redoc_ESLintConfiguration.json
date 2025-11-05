@@ -1,0 +1,257 @@
+{
+  "@typescript-eslint/explicit-function-return-type": [
+    "off"
+  ],
+  "@typescript-eslint/explicit-module-boundary-types": [
+    "off"
+  ],
+  "@typescript-eslint/no-explicit-any": [
+    "off"
+  ],
+  "@typescript-eslint/no-use-before-define": [
+    "off"
+  ],
+  "@typescript-eslint/interface-name-prefix": [
+    "off"
+  ],
+  "@typescript-eslint/no-inferrable-types": [
+    "off"
+  ],
+  "@typescript-eslint/no-non-null-assertion": [
+    "off"
+  ],
+  "@typescript-eslint/ban-ts-ignore": [
+    "off"
+  ],
+  "@typescript-eslint/ban-types": [
+    "error",
+    {
+      "types": {
+        "object": false
+      },
+      "extendDefaults": true
+    }
+  ],
+  "@typescript-eslint/no-var-requires": [
+    "off"
+  ],
+  "react/prop-types": [
+    "off"
+  ],
+  "react-hooks/rules-of-hooks": [
+    "error"
+  ],
+  "react-hooks/exhaustive-deps": [
+    "warn"
+  ],
+  "import/no-extraneous-dependencies": [
+    "error"
+  ],
+  "import/no-internal-modules": [
+    "error",
+    {
+      "allow": [
+        "prismjs/**",
+        "perfect-scrollbar/**",
+        "react-dom/*",
+        "core-js/**",
+        "memoize-one/**",
+        "unfetch/**",
+        "raf/polyfill",
+        "**/fixtures/**"
+      ]
+    }
+  ],
+  "@typescript-eslint/adjacent-overload-signatures": [
+    "error"
+  ],
+  "@typescript-eslint/ban-ts-comment": [
+    "error"
+  ],
+  "no-array-constructor": [
+    "off"
+  ],
+  "@typescript-eslint/no-array-constructor": [
+    "error"
+  ],
+  "no-empty-function": [
+    "off"
+  ],
+  "@typescript-eslint/no-empty-function": [
+    "error"
+  ],
+  "@typescript-eslint/no-empty-interface": [
+    "error"
+  ],
+  "@typescript-eslint/no-extra-non-null-assertion": [
+    "error"
+  ],
+  "no-extra-semi": [
+    "off"
+  ],
+  "@typescript-eslint/no-extra-semi": [
+    "error"
+  ],
+  "no-loss-of-precision": [
+    "off"
+  ],
+  "@typescript-eslint/no-loss-of-precision": [
+    "error"
+  ],
+  "@typescript-eslint/no-misused-new": [
+    "error"
+  ],
+  "@typescript-eslint/no-namespace": [
+    "error"
+  ],
+  "@typescript-eslint/no-non-null-asserted-optional-chain": [
+    "error"
+  ],
+  "@typescript-eslint/no-this-alias": [
+    "error"
+  ],
+  "@typescript-eslint/no-unnecessary-type-constraint": [
+    "error"
+  ],
+  "no-unused-vars": [
+    "off"
+  ],
+  "@typescript-eslint/no-unused-vars": [
+    "warn"
+  ],
+  "@typescript-eslint/prefer-as-const": [
+    "error"
+  ],
+  "@typescript-eslint/prefer-namespace-keyword": [
+    "error"
+  ],
+  "@typescript-eslint/triple-slash-reference": [
+    "error"
+  ],
+  "constructor-super": [
+    "off"
+  ],
+  "getter-return": [
+    "off"
+  ],
+  "no-const-assign": [
+    "off"
+  ],
+  "no-dupe-args": [
+    "off"
+  ],
+  "no-dupe-class-members": [
+    "off"
+  ],
+  "no-dupe-keys": [
+    "off"
+  ],
+  "no-func-assign": [
+    "off"
+  ],
+  "no-import-assign": [
+    "off"
+  ],
+  "no-new-symbol": [
+    "off"
+  ],
+  "no-obj-calls": [
+    "off"
+  ],
+  "no-redeclare": [
+    "off"
+  ],
+  "no-setter-return": [
+    "off"
+  ],
+  "no-this-before-super": [
+    "off"
+  ],
+  "no-undef": [
+    "off"
+  ],
+  "no-unreachable": [
+    "off"
+  ],
+  "no-unsafe-negation": [
+    "off"
+  ],
+  "no-var": [
+    "error"
+  ],
+  "prefer-const": [
+    "error"
+  ],
+  "prefer-rest-params": [
+    "error"
+  ],
+  "prefer-spread": [
+    "error"
+  ],
+  "valid-typeof": [
+    "off"
+  ],
+  "react/display-name": [
+    2
+  ],
+  "react/jsx-key": [
+    2
+  ],
+  "react/jsx-no-comment-textnodes": [
+    2
+  ],
+  "react/jsx-no-duplicate-props": [
+    2
+  ],
+  "react/jsx-no-target-blank": [
+    2
+  ],
+  "react/jsx-no-undef": [
+    2
+  ],
+  "react/jsx-uses-react": [
+    2
+  ],
+  "react/jsx-uses-vars": [
+    2
+  ],
+  "react/no-children-prop": [
+    2
+  ],
+  "react/no-danger-with-children": [
+    2
+  ],
+  "react/no-deprecated": [
+    2
+  ],
+  "react/no-direct-mutation-state": [
+    2
+  ],
+  "react/no-find-dom-node": [
+    2
+  ],
+  "react/no-is-mounted": [
+    2
+  ],
+  "react/no-render-return-value": [
+    2
+  ],
+  "react/no-string-refs": [
+    2
+  ],
+  "react/no-unescaped-entities": [
+    2
+  ],
+  "react/no-unknown-property": [
+    2
+  ],
+  "react/no-unsafe": [
+    0
+  ],
+  "react/react-in-jsx-scope": [
+    2
+  ],
+  "react/require-render-return": [
+    2
+  ]
+}

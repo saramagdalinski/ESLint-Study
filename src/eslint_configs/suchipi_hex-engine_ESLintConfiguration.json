@@ -1,0 +1,197 @@
+{
+  "react/no-danger-with-children": [
+    "error"
+  ],
+  "react/no-direct-mutation-state": [
+    "error"
+  ],
+  "react/no-redundant-should-component-update": [
+    "warn"
+  ],
+  "react/no-typos": [
+    "warn"
+  ],
+  "react/no-unknown-property": [
+    "warn"
+  ],
+  "react/no-unused-prop-types": [
+    "warn"
+  ],
+  "react/no-unused-state": [
+    "warn"
+  ],
+  "react/no-will-update-set-state": [
+    "error"
+  ],
+  "react/react-in-jsx-scope": [
+    "error"
+  ],
+  "react/require-render-return": [
+    "error"
+  ],
+  "react/void-dom-elements-no-children": [
+    "warn"
+  ],
+  "react/jsx-key": [
+    "warn"
+  ],
+  "react/jsx-no-comment-textnodes": [
+    "warn"
+  ],
+  "react/jsx-no-duplicate-props": [
+    "warn"
+  ],
+  "react/jsx-no-undef": [
+    "error",
+    {
+      "allowGlobals": true
+    }
+  ],
+  "react/jsx-uses-react": [
+    "warn"
+  ],
+  "react/jsx-uses-vars": [
+    "warn"
+  ],
+  "import/no-unresolved": [
+    "error",
+    {
+      "commonjs": true,
+      "caseSensitive": true,
+      "caseSensitiveStrict": false
+    }
+  ],
+  "import/named": [
+    "error"
+  ],
+  "import/default": [
+    "error"
+  ],
+  "import/namespace": [
+    "error"
+  ],
+  "import/export": [
+    "error"
+  ],
+  "import/no-named-as-default": [
+    "warn"
+  ],
+  "import/no-extraneous-dependencies": [
+    "warn"
+  ],
+  "for-direction": [
+    "error"
+  ],
+  "getter-return": [
+    "warn"
+  ],
+  "no-cond-assign": [
+    "warn",
+    "except-parens"
+  ],
+  "no-constant-condition": [
+    "warn",
+    {
+      "checkLoops": false
+    }
+  ],
+  "no-dupe-args": [
+    "error"
+  ],
+  "no-dupe-keys": [
+    "warn"
+  ],
+  "no-duplicate-case": [
+    "warn"
+  ],
+  "no-empty": [
+    "warn",
+    {
+      "allowEmptyCatch": true
+    }
+  ],
+  "no-empty-character-class": [
+    "warn"
+  ],
+  "no-invalid-regexp": [
+    "error"
+  ],
+  "no-obj-calls": [
+    "error"
+  ],
+  "no-unreachable": [
+    "warn"
+  ],
+  "valid-typeof": [
+    "warn",
+    {
+      "requireStringLiterals": false
+    }
+  ],
+  "no-caller": [
+    "error"
+  ],
+  "no-extra-label": [
+    "warn"
+  ],
+  "no-global-assign": [
+    "warn"
+  ],
+  "no-octal": [
+    "error"
+  ],
+  "no-octal-escape": [
+    "error"
+  ],
+  "no-self-assign": [
+    "warn"
+  ],
+  "no-unmodified-loop-condition": [
+    "warn"
+  ],
+  "no-unused-expressions": [
+    "warn",
+    {
+      "allowShortCircuit": true,
+      "allowTernary": true,
+      "allowTaggedTemplates": true,
+      "enforceForJSX": false
+    }
+  ],
+  "no-unused-labels": [
+    "warn"
+  ],
+  "no-with": [
+    "error"
+  ],
+  "no-delete-var": [
+    "error"
+  ],
+  "no-undef": [
+    "error"
+  ],
+  "no-unused-vars": [
+    "warn",
+    {
+      "args": "none"
+    }
+  ],
+  "constructor-super": [
+    "error"
+  ],
+  "no-const-assign": [
+    "error"
+  ],
+  "no-dupe-class-members": [
+    "warn"
+  ],
+  "no-new-symbol": [
+    "error"
+  ],
+  "no-this-before-super": [
+    "error"
+  ],
+  "no-useless-constructor": [
+    "warn"
+  ]
+}
