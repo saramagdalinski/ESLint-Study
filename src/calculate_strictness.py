@@ -6,22 +6,19 @@ import shutil
 import glob
 import time
 
-# --- Configuration ---
 
-# 1. Path to your Node.js helper script
+# Path to Node.js helper script
 NODE_HELPER_SCRIPT = '../eslint-helper/get_config.js'  # Make sure this is correct
 
-# 2. Input and output file names
+# Input and output file names
 INPUT_CSV = 'typescript_repos_metadata_filtered.csv'
 OUTPUT_CSV = 'repos_with_strictness_analysis.csv'
 
-# 3. Path for cloning repos
-# --- MODIFIED ---
-# Use an absolute path for the temp repo to avoid any confusion
+#Path for cloning repos
+
+# Use an absolute path for the temp repo
 TEMP_REPO_PATH = os.path.abspath('temp_repo_for_analysis')
 
-
-# --- Helper Functions ---
 
 def get_eslint_config(repo_root_path, config_file_relative_path):
     """
@@ -34,7 +31,6 @@ def get_eslint_config(repo_root_path, config_file_relative_path):
     3. repo_root_path: The root of the cloned repo (for finding node_modules).
     """
 
-    # --- MODIFIED ---
     # We now use the known config path to find a relevant .ts file
     config_file_full_path = os.path.join(repo_root_path, config_file_relative_path)
     config_dir = os.path.dirname(config_file_full_path)
@@ -43,18 +39,17 @@ def get_eslint_config(repo_root_path, config_file_relative_path):
     ts_files = glob.glob(os.path.join(config_dir, '**', '*.ts'), recursive=True)
 
     if not ts_files:
-        # Fallback: find *any* .ts file in the repo
+        # find any .ts file in the repo as a fallback
         ts_files = glob.glob(os.path.join(repo_root_path, '**', '*.ts'), recursive=True)
 
     if not ts_files:
         print(f"  -> No .ts files found in {repo_root_path}. Skipping.")
         return None
 
-    # We just need one file to probe the configuration
+    # need one file to probe the configuration
     probe_file_path = ts_files[0]
 
     try:
-        # --- MODIFIED ---
         # Pass all 3 paths to the node script
         process_args = [
             'node',
@@ -83,7 +78,7 @@ def get_eslint_config(repo_root_path, config_file_relative_path):
 
 
 def calculate_strictness(config_rules):
-    """Calculates strictness metrics based on your project proposal definitions."""
+    """Calculates strictness metrics """
     if not config_rules:
         return {'absolute_strictness': 0, 'relative_strictness': 0.0, 'total_enabled': 0}
 
@@ -124,14 +119,12 @@ def analyze_repo(repo_url, config_file_relative_path):
             check=True, capture_output=True, timeout=300
         )
 
-        # --- ADDED ---
         # 2. Install dependencies (npm install)
-        # This is the crucial step to fix "Cannot find package" errors
         print("  -> Running 'npm install'...")
         try:
             subprocess.run(
                 ['npm', 'install'],
-                cwd=TEMP_REPO_PATH,  # Run command *inside* the cloned repo
+                cwd=TEMP_REPO_PATH,  # Run command inside the cloned repo
                 check=True,
                 capture_output=True,
                 timeout=300  # 5 min timeout for install
@@ -145,7 +138,7 @@ def analyze_repo(repo_url, config_file_relative_path):
             return None
 
         # 3. Get the config
-        # --- MODIFIED ---
+
         # Pass both the repo path and the relative config path
         config_rules = get_eslint_config(TEMP_REPO_PATH, config_file_relative_path)
 
@@ -163,12 +156,10 @@ def analyze_repo(repo_url, config_file_relative_path):
         print(f"  -> Timeout cloning {repo_url}.")
         return None
     finally:
-        # 5. Clean up
+        # 5. Clean up the cloned repo
         if os.path.exists(TEMP_REPO_PATH):
             shutil.rmtree(TEMP_REPO_PATH)
 
-
-# --- Main Execution ---
 
 def main():
     print(f"Loading repositories from {INPUT_CSV}...")
@@ -178,13 +169,10 @@ def main():
         print(f"Error: Could not find {INPUT_CSV}.")
         return
 
-    # --- YOUR COLUMN NAMES ---
+    # Column names
     URL_COLUMN = 'html_url'
     LINTER_COLUMN = 'has_eslint'
-    # --- ADDED ---
-    # We now read the config path column
     CONFIG_PATH_COLUMN = 'eslint_config_path'
-    # ----------------------------
 
     if (URL_COLUMN not in df.columns or
             LINTER_COLUMN not in df.columns or
@@ -203,13 +191,12 @@ def main():
 
     for i, index in enumerate(eslint_df_indices):
         repo_url = df.at[index, URL_COLUMN]
-        # --- MODIFIED ---
+
         # Get the relative path to the config file
         config_path = df.at[index, CONFIG_PATH_COLUMN]
 
         print(f"\nAnalyzing ({i + 1}/{len(eslint_df_indices)}): {repo_url}")
 
-        # --- MODIFIED ---
         # Pass the config path to the analysis function
         metrics = analyze_repo(repo_url, config_path)
 
@@ -223,6 +210,7 @@ def main():
             print(f"  -> Failed to analyze {repo_url}.")
             df.at[index, 'analysis_status'] = 'failed'
 
+        # Save progress every 10 repos
         if (i + 1) % 10 == 0:
             print(f"\n--- Saving progress to {OUTPUT_CSV} ---")
             df.to_csv(OUTPUT_CSV, index=False)
