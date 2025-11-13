@@ -8,7 +8,7 @@ import time
 
 # --- Configuration ---
 
-# 1. Path to your Node.js helper script
+# 1. Path to Node.js helper script
 NODE_HELPER_SCRIPT = '../eslint-helper/get_config.js'
 
 # 2. Input CSV file name
