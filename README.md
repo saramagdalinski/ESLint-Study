@@ -23,16 +23,3 @@ The analysis is conducted in several phases:
 3.  **Bug-Fix Identification:** Bug-fix commits are identified by parsing commit messages for two keywords "fix," "bug,".
 4.  **Statistical Analysis:** The collected data is used to compare bug-fix ratios between projects with and without ESLint and to find correlations between strictness and bug-fix activity.
 5. **Linter-Preventable Analysis:** A small selection of bug fix commits are analyzed by taking pre and post commit snapshots and marking "buggy" lines of code. Then running ESLint to see if it marks this section of code. 
-
-## ⚙️ Setup and Installation
-
-### 1. System Dependencies
-* [Python 3.8+](https://www.python.org/)
-* [Node.js v18+](https://nodejs.org/) (which includes `npm`)
-* [Git](https://git-scm.com/)
-
-### 2. Python Dependencies
-
-# Install required Python packages
-pip install pandas requests
-
