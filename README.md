@@ -1,6 +1,6 @@
 # An Empirical Study on the Efficacy of ESLint in Reducing Bugs in TypeScript
 
-This repository contains the data collection and analysis scripts for the CMPT 479/982 project, "An Empirical Study on the Efficacy of ESLint in Reducing Bugs in TypeScript." The goal of this research is to empirically study the relationship between ESLint adoption, configuration strictness, and bug-fix activity in open-source TypeScript projects.
+This repository contains the data collection and analysis scripts for our CMPT 479/982 project, "An Empirical Study on the Efficacy of ESLint in Reducing Bugs in TypeScript." The goal of this research is to empirically study the relationship between ESLint adoption, configuration strictness, and bug-fix activity in open-source TypeScript projects.
 
 ## 🚀 Project Goals
 
