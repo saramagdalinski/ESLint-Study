@@ -16,20 +16,20 @@ if not GITHUB_TOKEN:
     print("export GITHUB_TOKEN='your_token_here'")
     exit(1)
 
-# --- Your Cluster Sampling Strategy ---
+
 REPOS_TO_SAMPLE = 25
 COMMITS_PER_REPO = 10
 # --------------------------------------
 
-# Set file paths (relative to a 'scripts' directory, e.g.)
+# Set file paths
 INPUT_CSV_FILE = os.path.join('..', 'data', 'processed', 'repos_with_bug_fix_ratios.csv')
 OUTPUT_CSV_FILE = os.path.join('..', 'data', 'processed', 'manual_checkout_list.csv')
 
-# Keywords to search for in commit messages (from your script)
+# Keywords to search for in commit messages
 BUG_FIX_KEYWORDS = [r'\bbug\b', r'\bfix\b']
 keyword_regex = re.compile('|'.join(BUG_FIX_KEYWORDS), re.IGNORECASE)
 
-# --- SCRIPT ---
+
 
 HEADERS = {
     'Authorization': f'token {GITHUB_TOKEN}',
