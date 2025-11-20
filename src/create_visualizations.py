@@ -8,7 +8,7 @@ import statsmodels.api as sm
 
 # --- Configuration ---
 INPUT_CSV = '../data/processed/repos_with_bug_fix_ratios.csv'
-SAVE_DIR = 'visualizations'
+SAVE_DIR = '../visualizations'
 ALPHA = 0.05
 
 
