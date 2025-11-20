@@ -176,7 +176,7 @@ def create_visualizations():
     plt.savefig(os.path.join(SAVE_DIR, '07_rq3_contributors_scatter.png'))
     plt.close()
 
-    # --- NEW Plot 8: Test 2e - Confounding Variables Boxplots ---
+    # --- Plot 8: Test 2e - Confounding Variables Boxplots ---
     print("Generating Plot 8: RQ2 (Test 2e) - Confounding Variables...")
     df['group_2b'] = np.where(df['has_eslint'] == True, 'All ESLint', 'No ESLint')
     fig, axes = plt.subplots(2, 2, figsize=(16, 12))
@@ -206,7 +206,7 @@ def create_visualizations():
     plt.savefig(os.path.join(SAVE_DIR, '08_rq2_confounding_variables_boxplots.png'))
     plt.close()
 
-    # --- NEW Plot 9: Test 2f - Bug-Fix Ratio by Config Type ---
+    # --- Plot 9: Test 2f - Bug-Fix Ratio by Config Type ---
     print("Generating Plot 9: RQ2 (Test 2f) - Bug-Fix Ratio by Config Type...")
     # Create the combined DataFrame for plotting
     no_eslint_group['config_type_group'] = 'No ESLint'
@@ -226,7 +226,7 @@ def create_visualizations():
     plt.savefig(os.path.join(SAVE_DIR, '09_rq2_bug_ratio_by_config_type_boxplot.png'))
     plt.close()
 
-    # --- NEW Plot 10: Test 3d - Strictness by Config Type ---
+    # --- Plot 10: Test 3d - Strictness by Config Type ---
     print("Generating Plot 10: RQ3 (Test 3d) - Strictness by Config Type...")
     plot_df_3d = valid_eslint_group[valid_eslint_group['config_type'] != 'Unknown'].copy()
     plot_df_3d['relative_strictness_pct'] = plot_df_3d['relative_strictness'] * 100
@@ -241,7 +241,7 @@ def create_visualizations():
     plt.savefig(os.path.join(SAVE_DIR, '10_rq3_strictness_by_config_type_boxplot.png'))
     plt.close()
 
-    # --- NEW Plot 11: Test 3e - Regression Coefficient Plot ---
+    # --- Plot 11: Test 3e - Regression Coefficient Plot ---
     print("Generating Plot 11: RQ3 (Test 3e) - Regression Coefficient Plot...")
 
     # --- Rerun the final regression model (Test 3e) to get data ---
@@ -294,11 +294,32 @@ def create_visualizations():
     plt.ylabel('Model Variable')
     plt.grid(axis='x')
 
-    # --- FIX ---
     # Add tight_layout() to prevent labels from being cut off
     plt.tight_layout()
 
     plt.savefig(os.path.join(SAVE_DIR, '11_rq3_regression_coefficient_plot.png'))
+    plt.close()
+
+    # --- Plot 12: Test 2b - All ESLint vs. No ESLint (Box Plot) ---
+    print("Generating Plot 12: RQ2 (Test 2b) - All ESLint vs. No ESLint...")
+
+    # Prepare the data for this specific comparison
+    no_eslint_group['group_status'] = 'No ESLint'
+    all_eslint_group['group_status'] = 'All ESLint'
+
+    plot_df_2b = pd.concat([no_eslint_group, all_eslint_group])
+
+    plt.figure(figsize=(8, 7))
+    sns.boxplot(x='group_status', y='bug_fix_ratio', data=plot_df_2b,
+                palette="pastel",
+                showfliers=False)  # Hide outliers to focus on the main distribution
+
+    plt.title('RQ2 (Test 2b): Bug-Fix Ratio (All ESLint vs. No ESLint)', fontsize=16)
+    plt.xlabel('Project Group')
+    plt.ylabel('Bug-Fix Ratio')
+    plt.ylim(0, 0.5)  # Zoom in for clarity
+
+    plt.savefig(os.path.join(SAVE_DIR, '12_rq2_all_eslint_vs_no_eslint_boxplot.png'))
     plt.close()
 
     print("\n--- Visualization Complete ---")
