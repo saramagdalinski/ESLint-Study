@@ -33,7 +33,6 @@ The analysis pipeline is located in the `src/` directory.
 
 ### 1. Data Collection
 * **`collect_repos.py`**: Queries the GitHub REST API to find active, non-forked TypeScript repositories with >50 stars. It detects if an ESLint config exists (legacy or flat config) and saves the initial metadata.
-* **`filter_archived_repos.py`**: Cleans the dataset by verifying that repositories are still active and not archived.
 * **`create_file_validation_sample.py`**: Generates a random sample of repositories to manually verify that our "has ESLint" detection logic is accurate.
 
 ### 2. Strictness Analysis
@@ -55,7 +54,7 @@ The analysis pipeline is located in the `src/` directory.
 
 ---
 
-## 🧩 The ESLint Helper
+## 🧩 The ESLint Helper & Standard Linter
 
 Located in `eslint-helper/`, this is a critical component of our strictness analysis.
 
@@ -68,6 +67,8 @@ We cannot simply parse an `.eslintrc.json` file because most modern projects use
 3.  `get_config.js` uses ESLint's internal Node.js API (`calculateConfigForFile`) to load the project's specific ESLint configuration, resolving all plugins and extended presets.
 4.  It returns the final, flattened configuration object to Python.
 5.  Python counts the number of rules set to "error" vs "warn" to calculate strictness.
+
+Located in `standard_linter/`, the `eslint.config.js` is the ESLint configuration file used in the Deep Dive Analysis for RQ4. It utilizes the official `typescript-eslint` strict and stylistic options. This provides an unbiased and maximum strictness baseline to determine if a bug was theoritetically preventable by any modern static analysis rule, regardless of the rules the porject owners chose to enable. 
 
 ---
 
@@ -114,7 +115,7 @@ To reproduce the comeplte dataset from scratch and the visualizations, run the s
 2. `src/filter_archived_repos.py`
 3. `src/calculate_strictness.py`
 4. `src/get_commits.py`
-5. `get_testing_data.py`
+5. `src/get_testing_data.py`
 6. `sec/run_main_analysis.py`
 7. `src/analyze_testing_and_create_visualizations`
 8. `src/create_main_visulizations`
