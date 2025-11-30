@@ -117,7 +117,7 @@ To reproduce the comeplte dataset from scratch and the visualizations, run the s
 5. `get_testing_data.py`
 6. `sec/run_main_analysis.py`
 7. `src/analyze_testing_and_create_visualizations`
-8. `srccreate_main_visulizations`
+8. `src/create_main_visulizations`
 
 * Note: Adjust paths accordingly for all scripts depending on where input and output files are located / will be saved. 
 
