@@ -112,13 +112,13 @@ The data collection scripts require a GitHub Personal Access Token to use the AP
 To reproduce the comeplte dataset from scratch and the visualizations, run the scripts in this order
 
 1. `src/collect_repos.py` 
-2. `src/filter_archived_repos.py`
-3. `src/calculate_strictness.py`
-4. `src/get_commits.py`
-5. `src/get_testing_data.py`
-6. `sec/run_main_analysis.py`
-7. `src/analyze_testing_and_create_visualizations`
-8. `src/create_main_visulizations`
+2. `src/calculate_strictness.py`
+3. `src/get_commits.py`
+4. `src/get_testing_data.py`
+5. `sec/run_main_analysis.py`
+6. `src/analyze_testing_and_create_visualizations`
+7. `src/create_main_visulizations`
 
 * Note: Adjust paths accordingly for all scripts depending on where input and output files are located / will be saved. 
+* Note: Our complete dataset originates from a random sample from the GITHUB API. The exact data optained may be different. If you wish to get our results, you may direclty use the complete_dataset.csv and skip all data collection scripts. 
 
