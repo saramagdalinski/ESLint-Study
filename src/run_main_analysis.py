@@ -5,7 +5,7 @@ import numpy as np
 import sys
 
 # --- Configuration ---
-INPUT_CSV = '../data/processed/repos_with_bug_fix_ratios.csv'
+INPUT_CSV = '../data/processed/complete_dataset.csv'
 ALPHA = 0.05
 
 

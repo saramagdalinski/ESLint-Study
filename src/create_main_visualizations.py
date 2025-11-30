@@ -7,7 +7,7 @@ import sys
 import statsmodels.api as sm
 
 # --- Configuration ---
-INPUT_CSV = '../data/processed/repos_with_bug_fix_ratios.csv'
+INPUT_CSV = '../data/processed/complete_dataset.csv'
 SAVE_DIR = '../visualizations'
 ALPHA = 0.05
 

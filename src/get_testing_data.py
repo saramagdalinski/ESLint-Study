@@ -7,8 +7,8 @@ import re
 from tqdm import tqdm
 
 # --- Config ---
-INPUT_FILE = os.path.join('..', 'data', 'processed', 'repos_with_bug_fix_ratios.csv')  # Fixed typo here
-OUTPUT_FILE = os.path.join('..', 'data', 'processed', 'test_metrics_all.csv')
+INPUT_FILE = os.path.join('..', 'data', 'processed', 'repos_with_bug_fix_ratios.csv') 
+OUTPUT_FILE = os.path.join('..', 'data', 'processed', 'complete_dataset.csv')
 TEMP_DIR = 'temp_clones'
 
 # List of frameworks to hunt for in package.json
