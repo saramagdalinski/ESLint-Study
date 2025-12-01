@@ -68,7 +68,7 @@ We cannot simply parse an `.eslintrc.json` file because most modern projects use
 4.  It returns the final, flattened configuration object to Python.
 5.  Python counts the number of rules set to "error" vs "warn" to calculate strictness.
 
-Located in `standard_linter/`, the `eslint.config.js` is the ESLint configuration file used in the Deep Dive Analysis for RQ4. It utilizes the official `typescript-eslint` strict and stylistic options. This provides an unbiased and maximum strictness baseline to determine if a bug was theoritetically preventable by any modern static analysis rule, regardless of the rules the project owners chose to enable. 
+Located in `standard_linter/`, the `eslint.config.mjs` is the ESLint configuration file used in the Deep Dive Analysis for RQ4. It utilizes the official `typescript-eslint` strict and stylistic options. This provides an unbiased and maximum strictness baseline to determine if a bug was theoritetically preventable by any modern static analysis rule, regardless of the rules the project owners chose to enable. 
 
 ---
 
