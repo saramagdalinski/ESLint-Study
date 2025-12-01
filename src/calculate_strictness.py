@@ -31,7 +31,7 @@ def get_eslint_config(repo_root_path, config_file_relative_path):
     3. repo_root_path: The root of the cloned repo (for finding node_modules).
     """
 
-    # We now use the known config path to find a relevant .ts file
+    # use the known config path to find a relevant .ts file
     config_file_full_path = os.path.join(repo_root_path, config_file_relative_path)
     config_dir = os.path.dirname(config_file_full_path)
 

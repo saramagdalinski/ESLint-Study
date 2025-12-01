@@ -172,11 +172,11 @@ def main():
         print(f"Found columns: {list(df.columns)}")
         return
 
-    # --- ADDED ---
-    # New columns to track saving progress in a new CSV
+  
+    # columns to track saving progress in a new CSV
     df['config_save_status'] = 'not_run'
     PROGRESS_CSV = 'config_save_progress.csv'
-    # -------------
+
 
     eslint_df_indices = df[df[LINTER_COLUMN] == True].index
     print(f"Found {len(eslint_df_indices)} repositories with ESLint to check.")

@@ -73,7 +73,6 @@ def get_bug_commits_for_repo(repo_full_name, target_count):
             for commit in commits:
                 message = commit['commit']['message']
 
-                # *** THIS IS THE NEW LINE ***
                 # We only want non-merge commits (i.e., commits with only 1 parent)
                 is_merge_commit = len(commit.get('parents', [])) > 1
 
@@ -131,7 +130,6 @@ print(f"Randomly sampling {actual_sample_size} repos from the 'success' group...
 df_sample = df_successful_repos.sample(n=actual_sample_size, random_state=42)  # Reproducible sample
 
 # 4. Resumable logic
-# *** IMPORTANT: Delete your old 'manual_checkout_list.csv' before running ***
 if os.path.exists(OUTPUT_CSV_FILE):
     print(f"Warning: Output file {OUTPUT_CSV_FILE} already exists.")
     print("Please delete it before running this script to ensure a clean list.")

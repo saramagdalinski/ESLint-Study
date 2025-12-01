@@ -7,6 +7,7 @@ import sys
 import statsmodels.api as sm
 
 # --- Configuration ---
+# Ensure this points to your final dataset
 INPUT_CSV = '../data/processed/complete_dataset.csv'
 SAVE_DIR = '../visualizations'
 ALPHA = 0.05
@@ -88,8 +89,9 @@ def create_visualizations():
             autopct='%1.1f%%',
             startangle=140,
             colors=sns.color_palette("pastel"))
-    plt.title('RQ1: ESLint Adoption Prevalence in Sample (n=982)', fontsize=16)
-    plt.savefig(os.path.join(SAVE_DIR, '01_rq1_adoption_pie_chart.png'))
+    plt.title('ESLint Adoption Prevalence in Sample (n=982)', fontsize=14, fontweight='bold')
+    plt.tight_layout()
+    plt.savefig(os.path.join(SAVE_DIR, '01_rq1_adoption_pie_chart.png'), dpi=300)
     plt.close()
 
     # --- Plot 2: RQ1 - Analyzability of ESLint Configs (Bar Chart) ---
@@ -101,10 +103,11 @@ def create_visualizations():
     })
 
     sns.barplot(x='Status', y='Count', data=funnel_df, palette="muted")
-    plt.title('RQ1: Analyzability of Repos with ESLint (n=708)', fontsize=16)
+    plt.title('Analyzability of Repositories with ESLint (n=708)', fontsize=14, fontweight='bold')
     plt.ylabel('Number of Repositories')
     plt.xlabel('Configuration Status')
-    plt.savefig(os.path.join(SAVE_DIR, '02_rq1_analyzability_bar_chart.png'))
+    plt.tight_layout()
+    plt.savefig(os.path.join(SAVE_DIR, '02_rq1_analyzability_bar_chart.png'), dpi=300)
     plt.close()
 
     # --- Plot 3: RQ1 - Distribution of Relative Strictness (Histogram) ---
@@ -114,10 +117,11 @@ def create_visualizations():
                  kde=True,
                  bins=20,
                  color=sns.color_palette("deep")[2])
-    plt.title('RQ1: Distribution of Relative Strictness (n=282 Valid Configs)', fontsize=16)
+    plt.title('Distribution of Relative Strictness (n=282 Valid Configs)', fontsize=14, fontweight='bold')
     plt.xlabel('Relative Strictness (% of enabled rules set to "error")')
     plt.ylabel('Number of Repositories')
-    plt.savefig(os.path.join(SAVE_DIR, '03_rq1_strictness_histogram.png'))
+    plt.tight_layout()
+    plt.savefig(os.path.join(SAVE_DIR, '03_rq1_strictness_histogram.png'), dpi=300)
     plt.close()
 
     # --- Plot 4: RQ2 - Bug-Fix Ratio by Group (Box Plot) ---
@@ -132,11 +136,12 @@ def create_visualizations():
     sns.boxplot(x='group_status', y='bug_fix_ratio', data=plot_df_2d,
                 palette="pastel",
                 showfliers=False)  # Hide outliers
-    plt.title('RQ2 (Test 2d): Bug-Fix Ratio by ESLint Analysis Status', fontsize=16)
+    plt.title('Bug-Fix Ratio by ESLint Analysis Status', fontsize=14, fontweight='bold')
     plt.xlabel('Project Group')
     plt.ylabel('Bug-Fix Ratio')
     plt.ylim(0, 0.5)
-    plt.savefig(os.path.join(SAVE_DIR, '04_rq2_bug_ratio_by_status_boxplot.png'))
+    plt.tight_layout()
+    plt.savefig(os.path.join(SAVE_DIR, '04_rq2_bug_ratio_by_status_boxplot.png'), dpi=300)
     plt.close()
 
     # --- Plot 5: RQ3 - Strictness vs. Bug-Fix Ratio (Scatter Plot) ---
@@ -147,10 +152,11 @@ def create_visualizations():
                 ci=95,
                 line_kws={'color': 'red', 'linestyle': '--'},
                 scatter_kws={'alpha': 0.3})
-    plt.title('RQ3 (Test 3a): Bug-Fix Ratio vs. Relative Strictness', fontsize=16)
+    plt.title('Bug-Fix Ratio vs. Relative Strictness', fontsize=14, fontweight='bold')
     plt.xlabel('Relative Strictness (%)')
     plt.ylabel('Bug-Fix Ratio')
-    plt.savefig(os.path.join(SAVE_DIR, '05_rq3_strictness_scatter.png'))
+    plt.tight_layout()
+    plt.savefig(os.path.join(SAVE_DIR, '05_rq3_strictness_scatter.png'), dpi=300)
     plt.close()
 
     # --- Plot 6 & 7: RQ3 - Confounding Variables (Scatter Plots) ---
@@ -159,28 +165,30 @@ def create_visualizations():
     sns.regplot(x='project_age_days', y='bug_fix_ratio', data=df.dropna(subset=['project_age_days']),
                 line_kws={'color': 'red', 'linestyle': '--'},
                 scatter_kws={'alpha': 0.2})
-    plt.title('RQ3: Bug-Fix Ratio vs. Project Age (All Repos)', fontsize=16)
+    plt.title('Bug-Fix Ratio vs. Project Age (All Repos)', fontsize=14, fontweight='bold')
     plt.xlabel('Project Age (Days)')
     plt.ylabel('Bug-Fix Ratio')
-    plt.savefig(os.path.join(SAVE_DIR, '06_rq3_age_scatter.png'))
+    plt.tight_layout()
+    plt.savefig(os.path.join(SAVE_DIR, '06_rq3_age_scatter.png'), dpi=300)
     plt.close()
 
     plt.figure(figsize=(10, 6))
     sns.regplot(x='contributors_count', y='bug_fix_ratio', data=df.dropna(subset=['contributors_count']),
                 line_kws={'color': 'red', 'linestyle': '--'},
                 scatter_kws={'alpha': 0.2})
-    plt.title('RQ3: Bug-Fix Ratio vs. Contributors (All Repos)', fontsize=16)
+    plt.title('Bug-Fix Ratio vs. Contributors (All Repos)', fontsize=14, fontweight='bold')
     plt.xlabel('Number of Contributors (Log Scale)')
     plt.ylabel('Bug-Fix Ratio')
     plt.xscale('log')
-    plt.savefig(os.path.join(SAVE_DIR, '07_rq3_contributors_scatter.png'))
+    plt.tight_layout()
+    plt.savefig(os.path.join(SAVE_DIR, '07_rq3_contributors_scatter.png'), dpi=300)
     plt.close()
 
     # --- Plot 8: Test 2e - Confounding Variables Boxplots ---
     print("Generating Plot 8: RQ2 (Test 2e) - Confounding Variables...")
     df['group_2b'] = np.where(df['has_eslint'] == True, 'All ESLint', 'No ESLint')
     fig, axes = plt.subplots(2, 2, figsize=(16, 12))
-    fig.suptitle('RQ2 (Test 2e): "ESLint Paradox" - Confounding Variables', fontsize=20, y=1.03)
+    fig.suptitle('The "ESLint Paradox": Comparing Confounding Variables', fontsize=18, fontweight='bold', y=0.98)
 
     sns.boxplot(ax=axes[0, 0], x='group_2b', y='contributors_count', data=df, palette="pastel", showfliers=False)
     axes[0, 0].set_title('Contributors Count')
@@ -203,12 +211,11 @@ def create_visualizations():
     axes[1, 1].set_ylabel('Age (Days)')
 
     plt.tight_layout()
-    plt.savefig(os.path.join(SAVE_DIR, '08_rq2_confounding_variables_boxplots.png'))
+    plt.savefig(os.path.join(SAVE_DIR, '08_rq2_confounding_variables_boxplots.png'), dpi=300)
     plt.close()
 
     # --- Plot 9: Test 2f - Bug-Fix Ratio by Config Type ---
     print("Generating Plot 9: RQ2 (Test 2f) - Bug-Fix Ratio by Config Type...")
-    # Create the combined DataFrame for plotting
     no_eslint_group['config_type_group'] = 'No ESLint'
     valid_eslint_group['config_type_group'] = valid_eslint_group['config_type']
 
@@ -219,11 +226,12 @@ def create_visualizations():
                 palette="pastel",
                 showfliers=False)
 
-    plt.title('RQ2 (Test 2f): Bug-Fix Ratio by Config Type', fontsize=16)
+    plt.title('Bug-Fix Ratio by Configuration Type', fontsize=14, fontweight='bold')
     plt.xlabel('Configuration Type')
     plt.ylabel('Bug-Fix Ratio')
     plt.ylim(0, 0.5)
-    plt.savefig(os.path.join(SAVE_DIR, '09_rq2_bug_ratio_by_config_type_boxplot.png'))
+    plt.tight_layout()
+    plt.savefig(os.path.join(SAVE_DIR, '09_rq2_bug_ratio_by_config_type_boxplot.png'), dpi=300)
     plt.close()
 
     # --- Plot 10: Test 3d - Strictness by Config Type ---
@@ -235,20 +243,21 @@ def create_visualizations():
     sns.boxplot(x='config_type', y='relative_strictness_pct', data=plot_df_3d,
                 palette="pastel")
 
-    plt.title('RQ3 (Test 3d): Relative Strictness by Config Type', fontsize=16)
+    plt.title('Relative Strictness by Configuration Type', fontsize=14, fontweight='bold')
     plt.xlabel('Configuration Type')
     plt.ylabel('Relative Strictness (%)')
-    plt.savefig(os.path.join(SAVE_DIR, '10_rq3_strictness_by_config_type_boxplot.png'))
+    plt.tight_layout()
+    plt.savefig(os.path.join(SAVE_DIR, '10_rq3_strictness_by_config_type_boxplot.png'), dpi=300)
     plt.close()
 
-    # --- Plot 11: Test 3e - Regression Coefficient Plot ---
+    # --- Plot 11: Test 3e - Regression Coefficient Plot (ENHANCED) ---
     print("Generating Plot 11: RQ3 (Test 3e) - Regression Coefficient Plot...")
 
     # --- Rerun the final regression model (Test 3e) to get data ---
     eslint_data = valid_eslint_group.copy()
     Y = eslint_data['bug_fix_ratio']
     X_base = df.loc[eslint_data.index][['log_age', 'log_size', 'log_contributors', 'log_stars']]
-    X_dummies = pd.get_dummies(eslint_data['strictness_category'], prefix='strictness', drop_first=True, dtype=int)
+    X_dummies = pd.get_dummies(eslint_data['strictness_category'], prefix='Strictness', drop_first=True, dtype=int)
     X = pd.concat([X_base, X_dummies], axis=1)
     X = sm.add_constant(X, has_constant='add')
     final_data = pd.concat([Y, X], axis=1).dropna()
@@ -263,67 +272,85 @@ def create_visualizations():
     model_log = sm.OLS(Y_final, X_final).fit()
 
     # --- Create the Coefficient Plot ---
-    conf = model_log.conf_int()  # Get 95% confidence intervals
-    params = model_log.params  # Get coefficients
+    conf = model_log.conf_int()
+    params = model_log.params
+    pvalues = model_log.pvalues  # Get p-values to color code
 
-    # Combine into a DataFrame
     coef_df = pd.DataFrame({
         'param': params.index,
         'coef': params.values,
         'conf_low': conf[0],
-        'conf_high': conf[1]
+        'conf_high': conf[1],
+        'pvalue': pvalues.values
     })
 
-    # Drop the 'const' (intercept) for a cleaner plot
+    # Drop intercept and rename variables for better readability
     coef_df = coef_df[coef_df['param'] != 'const']
+
+    # Rename the labels to look professional
+    label_map = {
+        'log_age': 'Project Age (Log)',
+        'log_size': 'Repo Size (Log)',
+        'log_contributors': 'Contributors (Log)',
+        'log_stars': 'Stars (Log)',
+        'Strictness_Low Strictness (1-80%)': 'Strictness: Low',
+        'Strictness_High Strictness (81-99%)': 'Strictness: High',
+        'Strictness_Max Strictness (100%)': 'Strictness: Max'
+    }
+    coef_df['param'] = coef_df['param'].map(label_map).fillna(coef_df['param'])
+
+    # Define colors based on significance (p < 0.05)
+    coef_df['color'] = np.where(coef_df['pvalue'] < 0.05, '#d62728', '#7f7f7f')  # Red if sig, Gray if not
 
     plt.figure(figsize=(10, 6))
 
-    # Plot coefficients as points
-    plt.scatter(x=coef_df['coef'], y=coef_df['param'], s=80, color='b')
-
-    # Plot confidence intervals as lines
+    # Plot lines
     plt.hlines(y=coef_df['param'], xmin=coef_df['conf_low'], xmax=coef_df['conf_high'],
-               color='b', alpha=0.5, lw=3)
+               colors=coef_df['color'], alpha=0.8, lw=3)
 
-    # Add a vertical line at 0 for reference
-    plt.axvline(x=0, color='red', linestyle='--', lw=1)
+    # Plot points
+    plt.scatter(x=coef_df['coef'], y=coef_df['param'], s=100, c=coef_df['color'])
 
-    plt.title('RQ3 (Test 3e): Regression Model Coefficients (95% CI)', fontsize=16)
-    plt.xlabel('Coefficient Value')
-    plt.ylabel('Model Variable')
-    plt.grid(axis='x')
+    # Add zero line
+    plt.axvline(x=0, color='black', linestyle='--', lw=1.5, alpha=0.8)
 
-    # Add tight_layout() to prevent labels from being cut off
+
+    plt.xlabel('Coefficient Value (Effect on Bugs)', fontsize=12, labelpad=15)
+    plt.ylabel('Predictor Variable', fontsize=12, labelpad=15)
+    # ----------------
+
+    plt.grid(axis='x', linestyle='--', alpha=0.7)
+
+    # Add legend manually
+    from matplotlib.lines import Line2D
+    legend_elements = [
+        Line2D([0], [0], color='#d62728', lw=3, label='Significant (p < 0.05)'),
+        Line2D([0], [0], color='#7f7f7f', lw=3, label='Not Significant (p ≥ 0.05)')
+    ]
+    plt.legend(handles=legend_elements, loc='lower right')
+
     plt.tight_layout()
-
-    plt.savefig(os.path.join(SAVE_DIR, '11_rq3_regression_coefficient_plot.png'))
+    plt.savefig(os.path.join(SAVE_DIR, '11_rq3_regression_coefficient_plot.png'), dpi=300)
     plt.close()
 
     # --- Plot 12: Test 2b - All ESLint vs. No ESLint (Box Plot) ---
     print("Generating Plot 12: RQ2 (Test 2b) - All ESLint vs. No ESLint...")
-
-    # Prepare the data for this specific comparison
     no_eslint_group['group_status'] = 'No ESLint'
     all_eslint_group['group_status'] = 'All ESLint'
-
     plot_df_2b = pd.concat([no_eslint_group, all_eslint_group])
-
     plt.figure(figsize=(8, 7))
     sns.boxplot(x='group_status', y='bug_fix_ratio', data=plot_df_2b,
-                palette="pastel",
-                showfliers=False)  # Hide outliers to focus on the main distribution
-
-    plt.title('RQ2 (Test 2b): Bug-Fix Ratio (All ESLint vs. No ESLint)', fontsize=16)
+                palette="pastel", showfliers=False)
+    plt.title('Bug-Fix Ratio Comparison (All ESLint vs. No ESLint)', fontsize=14, fontweight='bold')
     plt.xlabel('Project Group')
     plt.ylabel('Bug-Fix Ratio')
-    plt.ylim(0, 0.5)  # Zoom in for clarity
-
-    plt.savefig(os.path.join(SAVE_DIR, '12_rq2_all_eslint_vs_no_eslint_boxplot.png'))
+    plt.ylim(0, 0.5)
+    plt.tight_layout()
+    plt.savefig(os.path.join(SAVE_DIR, '12_rq2_all_eslint_vs_no_eslint_boxplot.png'), dpi=300)
     plt.close()
 
     print("\n--- Visualization Complete ---")
-    print(f"All {len(os.listdir(SAVE_DIR))} plots have been saved to the '{SAVE_DIR}' directory.")
+    print(f"All plots have been saved to the '{SAVE_DIR}' directory.")
 
 
 if __name__ == "__main__":

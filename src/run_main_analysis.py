@@ -60,7 +60,7 @@ def run_analysis():
         right=True
     )
 
-    # --- NEW: Create Config Type Categories ---
+    # --- Create Config Type Categories ---
     valid_eslint_group['config_type'] = valid_eslint_group['eslint_config_path'].apply(get_config_type)
 
     # --- RQ1: Prevalence and Strictness (Descriptive Statistics) ---
@@ -90,7 +90,7 @@ def run_analysis():
     print("RQ2: Bug-Fix Ratio Comparison")
     print("=" * 50)
 
-    # (Tests 2a, 2b, 2c, 2d are unchanged...)
+    # (Tests 2a, 2b, 2c, 2d )
     print("\n--- Test 2a: Valid ESLint Repos (n={}) vs. No ESLint Repos (n={}) ---".format(len(valid_eslint_group),
                                                                                            len(no_eslint_group)))
     group1_data = no_eslint_group['bug_fix_ratio'].dropna()
