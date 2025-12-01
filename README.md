@@ -109,7 +109,7 @@ The data collection scripts require a GitHub Personal Access Token to use the AP
 
 ## 🔬 Reproduciblity Order
 
-To reproduce the comeplte dataset from scratch and the visualizations, run the scripts in this order
+To reproduce the comeplete dataset from scratch and the visualizations, run the scripts in this order
 
 1. `src/collect_repos.py` 
 2. `src/calculate_strictness.py`
