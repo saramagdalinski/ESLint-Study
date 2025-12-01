@@ -7,7 +7,6 @@ import sys
 import statsmodels.api as sm
 
 # --- Configuration ---
-# Ensure this points to your final dataset
 INPUT_CSV = '../data/processed/complete_dataset.csv'
 SAVE_DIR = '../visualizations'
 ALPHA = 0.05
