@@ -12,8 +12,8 @@ This project seeks to answer the following research questions:
 
 * **RQ1:** How prevalent is the adoption of ESLint among open-source TypeScript Projects, and how strict are their configurations?
 * **RQ2:** Do TypeScript projects that use ESLint exhibit lower bug-fix ratios compared to those that do not?
-* **RQ3:** Is there a relationship between the strictness of a project's ESLint configuration and its bug-fix activity?
-* **RQ4:** For a subset of bug-fix commits, what fraction are "linter-preventable" under a project's actual config vs. a standard config?
+* **RQ3:** Is there a relationship between the strictness of a project’s ESLint configuration and its bug-fix activity?
+* **RQ4:** For a subset of bug-fix commits, what fraction are linter-preventable under (a) the project's actual config (if available) and (b) a standard TypeScript ESLint config?
 
 ---
 
@@ -49,7 +49,7 @@ The analysis pipeline is located in the `src/` directory.
 
 ### 5. Statistical Analysis & Visualization
 * **`run_main_analysis.py`**: Runs the complete suite of statistical tests (Mann-Whitney U, Kruskal-Wallis, Spearman Correlation, and OLS Regression) for RQ1, RQ2, and RQ3.
-* **`analyze_testing_and_create_visualizations.py`**: Runs the interaction analysis (Testing * Strictness) and generates all the plots and figures used in the final report.
+* **`analyze_testing_and_create_visualizations.py`**: Runs the interaction analysis (Testing * Strictness) and generates plots and figures with testing data.
 * **`create_main_visualizations.py`**: Generates the primary visualizations for the initial research questions.
 
 ---
