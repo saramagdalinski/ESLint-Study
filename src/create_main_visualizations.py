@@ -41,7 +41,7 @@ def create_visualizations():
 
     print(f"Successfully loaded '{INPUT_CSV}'. Starting visualization...\n")
 
-    # --- Data Preparation (Mirrors run_analysis.py) ---
+    # --- Data Preparation ---
 
     # Create 'project_age_days'
     df['created_at'] = pd.to_datetime(df['created_at'])

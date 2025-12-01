@@ -217,8 +217,6 @@ def run_analysis():
     model_full = sm.OLS(Y_final, X_final).fit()
     print(model_full.summary())
 
-    # (3c in old script is removed, 3d and 3e are new)
-
     # --- Test 3d: Strictness by Config Type ---
     print("\n--- Test 3d: Strictness by Config Type (Mann-Whitney U Test) ---")
     print("Comparing 'Relative Strictness' between Legacy and Modern configs")
